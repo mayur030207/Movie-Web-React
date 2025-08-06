@@ -9,7 +9,7 @@ function Navbar({ getMovie }) {
 
   return (
     <>
-      <nav className="flex justify-between my-3 bg-[rgba(30,30,30,0.95)] text-white w-[85%] h-[85px] rounded-2xl items-center">
+      <nav className="flex flex-col justify-between my-3 bg-[rgba(30,30,30,0.95)] text-white md:w-[85%] w-[100%] h-[100px] md:h-[85px] rounded-2xl items-center md:flex-row">
         <h1 className="text-3xl font-extrabold mx-[20px]">Movies.com</h1>
         <form
           onSubmit={(e) => {
@@ -21,11 +21,11 @@ function Navbar({ getMovie }) {
             type="text"
             value={inputVal}
             placeholder="Enter Movie"
-            className="border p-1 w-[350px] rounded-[5px]"
+            className="border p-1 md:w-[350px] w-auto rounded-[5px]"
             onChange={handleChange}
           />
           <button
-            className="border font-extrabold p-[7px] mx-[20px] rounded-[5px]"
+            className="border font-extrabold md:p-[7px] p-0.5 mx-[20px] rounded-[5px]"
             type="submit"
           >
             <MdOutlineSearch />
