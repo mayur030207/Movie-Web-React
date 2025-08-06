@@ -23,7 +23,7 @@ function App() {
         <main className="flex flex-wrap justify-evenly items-center">
           {movieArray.map((item) => {
             return (
-              <div className="cards h-[450px] border-[2px] border-white w-[20%] rounded-[15px] m-[12px] overflow-hidden text-white text-center">
+              <div className="cards h-[450px] border-[2px] border-white md:w-[20%] w-[90%] rounded-[15px] m-[12px] overflow-hidden text-white text-center">
                 <img
                   src={item["#IMG_POSTER"]}
                   alt={item["TITLE"]}
