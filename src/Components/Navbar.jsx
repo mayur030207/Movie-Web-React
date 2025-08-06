@@ -10,7 +10,7 @@ function Navbar({ getMovie }) {
   return (
     <>
       <nav className="flex flex-col justify-between my-3 bg-[rgba(30,30,30,0.95)] text-white md:w-[85%] w-[100%] h-[100px] md:h-[85px] rounded-2xl items-center md:flex-row">
-        <h1 className="text-3xl font-extrabold mx-[20px]">Movies.com</h1>
+        <h1 className="text-3xl font-extrabold mx-[20px]">Movies4U.com</h1>
         <form
           onSubmit={(e) => {
             e.preventDefault();
